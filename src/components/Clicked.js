@@ -12,9 +12,13 @@ export default function Clicked({data}) {
             <h2>{data.name}</h2>
         <div class="clicked-desc">
             <p>{data.discountDesc}</p>
-            <p>Promo Code: {data.desc}</p>
+            <p>Promo Code: <span class="promo-code">{data.desc}</span> <span style={{fontSize:"10px",marginLeft:"10px"}}>*Mention at checkout!</span></p>
             <p>{data.address}</p>
-            <button><a href={data.link} target="_blank">Visit Website -></a></button>
+            <br/>
+            <button class="website-btn">
+                <a href={data.link} target="_blank" style={{textDecoration:"none",color:"white"}}>
+                    Visit Website <span>&#8594;</span>
+                    </a></button>
         </div>
         </div>
     </div>

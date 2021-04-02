@@ -8,7 +8,7 @@ const data = [
         name: "Hand Cafe",
         link: "https://www.HandCafeMidland.com",
         discountDesc:"Buy One, Get One Free Coffee or Tea",
-        desc:"Mention Midland AF at checkout!",
+        desc:"Midland AF",
         address:"5000 Briarwood Ave Suite 105, Midland, TX 79707",
         image: HandCafeImg,
     },

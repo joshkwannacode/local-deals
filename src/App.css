@@ -38,8 +38,8 @@
 	/* margin-top: 50px; */
 }
 .clicked-desc-div {
-	margin-left: 35px;
-	margin-top: 30px;
+	margin-left: 30px;
+	margin-top: 20px;
 }
 .clicked-div {
 	background-color: #f2f2f2;
@@ -62,4 +62,17 @@
 	position: absolute;
 	margin-left:350px;
 	border:none;
+}
+.website-btn{
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	margin-bottom: 10px;
+	margin-left: 200px;
+}
+.promo-code{
+	color:hsl(40,90%,60%);
 }
