@@ -13,7 +13,7 @@ export default function Clicked({data}) {
         <div class="clicked-desc">
             <p>{data.discountDesc}</p>
             <p>{data.address}</p>
-            <p>Promo Code: <span class="promo-code">{data.desc}</span> <span style={{fontSize:"10px",marginLeft:"10px"}}>*Mention at checkout!</span></p>
+            <p>Promo Code: <span class="promo-code"><strong>{data.desc}</strong></span> <span style={{fontSize:"10px",marginLeft:"10px"}}>*Mention at checkout!</span></p>
             
             <br/>
             <button class="website-btn">
