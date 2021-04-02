@@ -1,0 +1,65 @@
+.App {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.business-preclick-img {
+	height: 230px;
+	width: 230px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.pre-click-div {
+	margin-left: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	background-color: #f2f2f2;
+	width: 250px;
+	border-radius: 5px;
+}
+.pre-click-btn {
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.clicked-main-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.clicked-img-div {
+	/* margin-left: 300px; */
+	/* margin-top: 50px; */
+}
+.clicked-desc-div {
+	margin-left: 35px;
+	margin-top: 30px;
+}
+.clicked-div {
+	background-color: #f2f2f2;
+	margin-top:100px;
+	width:750px;
+	height: 350px;
+	border-radius:5px;
+}
+.business-clicked-img {
+	height: 330px;
+	width: 330px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.clicked-desc{
+	text-align:left;
+}
+.x-btn{
+	margin-top:5px;
+	position: absolute;
+	margin-left:350px;
+	border:none;
+}
