@@ -17,7 +17,7 @@ const data = [
         name: "Grassfire Lawn & Landscaping",
         link: "https://www.grassfirelawnandlandscaping.com",
         discountDesc:"First Lawn Service Free!",
-        desc:"Mention Midland AF at checkout!",
+        desc:"Midland AF",
         address:"Servicing Midland & Odessa",
         image: Grassfire,
     },
@@ -26,7 +26,7 @@ const data = [
         name: "Livlen Media",
         link: "https://www.livlenmedia.com",
         discountDesc:"10% First Month of Social Media Management",
-        desc:"Mention Midland AF at checkout!",
+        desc:"Midland AF",
         address:"Servicing Midland & Odessa",
         image: Livlen,
     }
