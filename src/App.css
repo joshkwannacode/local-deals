@@ -1,3 +1,6 @@
+*:focus {
+    outline: none;
+}
 .App {
 	text-align: center;
 	display: flex;
@@ -5,6 +8,8 @@
 	justify-content: center;
 	color:#1f2633;
 	flex-wrap: wrap;
+	/* font-family: Cardo;
+	font-size:18px; */
 }
 
 .business-preclick-img {
@@ -28,6 +33,9 @@
 	transform: scale(1.02);
 	transition: 100ms linear; 
 }
+.preclick-desc{
+	
+}
 .pre-click-btn {
 	background-color: black;
 	/* background-color: hsl(40,90%,60%); */
@@ -37,6 +45,7 @@
 	width: 150px;
 	height: 30px;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 .clicked-main-div {
 	display: flex;
