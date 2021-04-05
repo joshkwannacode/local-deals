@@ -4,6 +4,7 @@
 	flex-direction: row;
 	justify-content: center;
 	color:#1f2633;
+	flex-wrap: wrap;
 }
 
 .business-preclick-img {
@@ -13,6 +14,7 @@
 	margin-top: 10px;
 }
 .pre-click-div {
+	flex-wrap: wrap;
 	margin-left: 20px;
 	margin-top: 10px;
 	cursor: pointer;
