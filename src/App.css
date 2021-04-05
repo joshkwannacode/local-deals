@@ -44,8 +44,11 @@
 	/* margin-top: 50px; */
 }
 .clicked-desc-div {
-	margin-left: 30px;
+	margin-left: 20px;
 	margin-top: 20px;
+	/* display:flex;
+	flex-direction: column; */
+	text-align: center;
 }
 .clicked-div {
 	background-color: hsl(40,90%,75%);
@@ -82,8 +85,8 @@
 	width: 150px;
 	height: 30px;
 	margin-bottom: 10px;
-	margin-left: 100px;
-	/* justify-content: center; */
+	margin-left: 105px; 
+	
 }
 .promo-code{
 	color:#1f2633;
