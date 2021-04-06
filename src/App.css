@@ -1,5 +1,6 @@
 *:focus {
     outline: none;
+	
 }
 .App {
 	text-align: center;
@@ -10,13 +11,14 @@
 	flex-wrap: wrap;
 	/* font-family: Cardo;
 	font-size:18px; */
+	
 }
 
 /* SearchBar */
 .searchbar-main-div{
 	display: flex;
 	flex-direction: row;
-/* 	margin-left:30px; */
+	/* margin-left:30px; */
 	margin-bottom:15px;
 }
 .searchbar-btn-group{
@@ -31,7 +33,15 @@
 	width:100px;
 	height:40px;
 	border:none;
-	background-color:white;
+	background-color: hsl(40,90%,75%);
+	cursor:pointer;
+	border-radius: 5px;
+}
+.searchbar-btn.active{
+	width:100px;
+	height:40px;
+	border:none;
+	background-color: white;
 	cursor:pointer;
 	border-radius: 5px;
 }

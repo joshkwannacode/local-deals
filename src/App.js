@@ -4,6 +4,7 @@ import PreClicked from './components/PreClicked';
 import Clicked from './components/Clicked';
 import data from './data';
 import SearchBar from './components/SearchBar';
+import buttonNames from './components/buttonName';
 
 function App() {
   const [isClicked, setIsClicked] = useState(false);
@@ -19,24 +20,25 @@ function App() {
     
   };
 
+
   return (
     <div className="Main">
       <div>
-        <SearchBar />
+        <SearchBar b={buttonNames}/>
       </div>
     <div className="App">
       {isClicked===false?data.map(a=>{
         return(
-          <div class="pre-click-div" onClick={()=>onChange(a.id)}>
+          <div key={a.id} className="pre-click-div" onClick={()=>onChange(a.id)}>
             <PreClicked data={a}/>
-            <button class="pre-click-btn" onClick={()=>onChange(a.id)}>
+            <button className="pre-click-btn" onClick={()=>onChange(a.id)}>
               Get Promo Code
               </button>
           </div>
       )}):data.filter(elem=>elem.id===dataId).map(b=>{
         return(
-          <div class="clicked-div">
-            <button class="x-btn" onClick={()=>onChange()}>X</button>
+          <div key={b.id} className="clicked-div">
+            <button className="x-btn" onClick={()=>onChange()}>X</button>
             <Clicked data={b} />
           </div>
         )})}
