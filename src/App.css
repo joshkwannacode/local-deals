@@ -12,6 +12,35 @@
 	font-size:18px; */
 }
 
+/* SearchBar */
+.searchbar-main-div{
+	display: flex;
+	flex-direction: row;
+	margin-left:30px;
+	margin-bottom:15px;
+}
+.searchbar-btn-group{
+	margin-top:12px;
+	margin-left:20px;
+	border:1px solid black;
+	height:40px;
+	/* width:400px; */
+	border-radius: 5px;
+}
+.searchbar-btn{
+	width:100px;
+	height:40px;
+	border:none;
+	background-color:white;
+	cursor:pointer;
+	border-radius: 5px;
+}
+.searchbar-btn:hover{
+	background-color: hsl(40,90%,75%);
+	border-radius: 5px;
+}
+
+/* PreClick */
 .business-preclick-img {
 	height: 230px;
 	width: 230px;
@@ -45,8 +74,10 @@
 	width: 150px;
 	height: 30px;
 	margin-bottom: 10px;
-	cursor: pointer;
+	cursor: pointer
 }
+
+/* Clicked */
 .clicked-main-div {
 	display: flex;
 	flex-direction: row;
@@ -65,7 +96,7 @@
 }
 .clicked-div {
 	background-color: hsl(40,90%,75%);
-	margin-top:100px;
+	margin-top:20px;
 	width:750px;
 	height: 350px;
 	border-radius:5px;
