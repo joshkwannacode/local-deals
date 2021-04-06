@@ -14,6 +14,7 @@ const data = [
         address:"4400 W. Loop 250 Frontage Rd N., Suite 103 Midland, Texas 79707",
         phoneNum:"(432) 689-0800",
         image: LittleGym,
+        tags:"all"
     },
     {
         id:"2",
@@ -24,6 +25,7 @@ const data = [
         address:"5000 Briarwood Ave Suite 105, Midland, TX 79707",
         phoneNum:"",
         image: HandCafeImg,
+        tags:"eat"
     },
     {
         id:"3",
@@ -34,6 +36,7 @@ const data = [
         address:"Servicing Midland & Odessa",
         phoneNum:"",
         image: Grassfire,
+        tags:"home"
     },
     {
         id:"4",
@@ -44,6 +47,7 @@ const data = [
         address:"Servicing Midland & Odessa",
         phoneNum:"",
         image: Livlen,
+        tags:"business"
     },
     {
         id:"5",
@@ -54,6 +58,7 @@ const data = [
         address:"",
         phoneNum:"",
         image: BusinessFeatured,
+        tags:"all"
     }
 ]
 

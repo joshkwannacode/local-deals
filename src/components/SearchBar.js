@@ -1,25 +1,36 @@
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react';
+import {Context} from '../context/Context';
+import data from '../data';
 
-export default function SearchBar({b}) {
+export default function SearchBar() {
     const [isActive,setIsActive] = useState(false);
     const [btnId,setBtnId] = useState(1);
+    const {contextData,setContextData} =useContext(Context);
 
-    const handleClick =(id)=>{
-        // setBtnId(id);
+    const buttonNames = [
+        {id:1,name:'All',tags:"all"},
+        {id:2,name:'Eat & Drink',tags:"eat"},
+        {id:3,name:'Business',tags:"business"},
+        {id:4,name:'Home',tags:"home"} 
+    ];
 
-      setBtnId(id)
-        
+    const handleClick =(id,tags)=>{
+        setBtnId(id);
+        if(tags==="all"){
+            setContextData(data);
+        }else{
+            setContextData(data.filter(click=>click.tags===tags));
+        }
     };
-    
-    console.log(btnId)
+
     return (
         <div className="searchbar-main-div">
             <h3>SELECT A CATEGORY</h3>
             <div className="searchbar-btn-group" >
-                {b.map(key =>
-                    {console.log("key",key)
+                {buttonNames.map(key =>
+                    {
                     return(<button className={key.id===btnId?"searchbar-btn":"searchbar-btn active"}
-                    onClick={()=>handleClick(key.id)}>{key.name}</button>)})}
+                    onClick={()=>handleClick(key.id,key.tags)}>{key.name}</button>)})}
                 
                 {/* <button className={btnId===1?"searchbar-btn":"active"}
                 onClick={handleClick(1)}>All</button>
