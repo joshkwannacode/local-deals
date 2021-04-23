@@ -11,7 +11,8 @@ export default function SearchBar() {
         {id:1,name:'All',tags:"all"},
         {id:2,name:'Eat & Drink',tags:"eat"},
         {id:3,name:'Business',tags:"business"},
-        {id:4,name:'Home',tags:"home"} 
+        {id:4,name:'Home',tags:"home"},
+        {id:5,name:'Kids',tags:"kids"},
     ];
 
     const handleClick =(id,tags)=>{

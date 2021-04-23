@@ -13,9 +13,11 @@ function App() {
   const {contextData,setContextData} =useContext(Context);
 
   const onChange=(id)=>{
-    if(isClicked!==true){
+    if(isClicked!==true&&id!=="5"){
       setIsClicked(true);
       setDataId(id);
+    }else if(id!=="5"){
+      setIsClicked(false);
     }else{
       setIsClicked(false);
     }
@@ -32,11 +34,24 @@ function App() {
     <div className="App">
       {isClicked===false?contextData.map(a=>{
         return(
+          <div>
+          {a.id!=="5"?
           <div key={a.id} className="pre-click-div" onClick={()=>onChange(a.id)}>
             <PreClicked data={a}/>
             <button className="pre-click-btn" onClick={()=>onChange(a.id)}>
               Get Promo Code
               </button>
+          </div>:
+              <div key={a.id} className="pre-click-div" onClick={()=>onChange(a.id)}>
+                <a href={a.link} target="_blank" rel="noreferrer" style={{textDecoration:"none",color:"black"}}>
+              <PreClicked data={a}/>
+              </a>
+              <button className="pre-click-btn" onClick={()=>onChange(a.id)}>
+              <a href={a.link} target="_blank" rel="noreferrer" style={{textDecoration:"none",color:"white"}}>
+                Contact Us
+              </a>
+              </button>
+              </div>}
           </div>
       )}):contextData.filter(elem=>elem.id===dataId).map(b=>{
         return(

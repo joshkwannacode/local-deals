@@ -14,7 +14,7 @@ const data = [
         address:"4400 W. Loop 250 Frontage Rd N., Suite 103 Midland, Texas 79707",
         phoneNum:"(432) 689-0800",
         image: LittleGym,
-        tags:"all"
+        tags:"kids"
     },
     {
         id:"2",
@@ -52,7 +52,7 @@ const data = [
     {
         id:"5",
         name: "Email",
-        link: "advertise@midlandaf.com",
+        link: "mailto:advertise@midlandaf.com",
         discountDesc:"advertise@midlandaf.com",
         desc:"",
         address:"",
