@@ -1,10 +1,30 @@
-import React, {useState,useContext} from 'react';
+import React, {useState,useContext,useRef,useEffect} from 'react';
 import './App.css';
 import PreClicked from './components/PreClicked';
 import Clicked from './components/Clicked';
 import data from './data';
 import SearchBar from './components/SearchBar';
 import {Context} from "./context/Context";
+
+let useClickOutside = (handler) => {
+  let domNode = useRef();
+
+  useEffect(() => {
+    let maybeHandler = (event) => {
+      if (domNode.current && !domNode.current.contains(event.target)){
+        handler();
+      }
+    };
+
+    document.addEventListener("mousedown", maybeHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", maybeHandler);
+    };
+  });
+
+  return domNode;
+};
 
 
 function App() {
@@ -23,7 +43,9 @@ function App() {
     }
     
   };
-
+  let domNode = useClickOutside(() => {
+    setIsClicked(false);
+  });
 
   return (
 
@@ -55,7 +77,7 @@ function App() {
           </div>
       )}):contextData.filter(elem=>elem.id===dataId).map(b=>{
         return(
-          <div key={b.id} className="clicked-div">
+          <div key={b.id} className="clicked-div" ref={domNode}>
             <button className="x-btn" onClick={()=>onChange()}>X</button>
             <Clicked data={b} />
           </div>
