@@ -27,17 +27,17 @@ const data = [
         image: HandCafeImg,
         tags:"eat"
     },
-    {
-        id:"3",
-        name: "Grassfire Lawn & Landscaping",
-        link: "https://www.grassfirelawnandlandscaping.com",
-        discountDesc:"First Lawn Service Free!",
-        desc:"Midland AF",
-        address:"Servicing Midland & Odessa",
-        phoneNum:"",
-        image: Grassfire,
-        tags:"home"
-    },
+    // {
+    //     id:"3",
+    //     name: "Grassfire Lawn & Landscaping",
+    //     link: "https://www.grassfirelawnandlandscaping.com",
+    //     discountDesc:"First Lawn Service Free!",
+    //     desc:"Midland AF",
+    //     address:"Servicing Midland & Odessa",
+    //     phoneNum:"",
+    //     image: Grassfire,
+    //     tags:"home"
+    // },
     {
         id:"4",
         name: "Livlen Media",
