@@ -13,7 +13,10 @@
 	font-size:18px; */
 	
 }
-
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
 /* SearchBar */
 .searchbar-main-div{
 	display: flex;
@@ -52,10 +55,22 @@
 
 /* PreClick */
 .business-preclick-img {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	margin-left:10px;
 	height: 230px;
 	width: 230px;
 	border-radius: 5px;
 	margin-top: 10px;
+
+}
+.business-preclick-img2 {
+	height: 230px;
+	width: 230px;
+	margin-top: 10px;
+	border-radius: 5px;
+	object-fit: cover;
 }
 .pre-click-div {
 	flex-wrap: wrap;
