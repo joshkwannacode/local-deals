@@ -18,17 +18,17 @@ const data = [
         image: Brewing,
         tags:"eat"
     },
-//     {
-//         id:"1",
-//         name: "The Little Gym of Midland",
-//         link: "https://www.thelittlegym.com/midlandtx",
-//         discountDesc:"Two free Bugs Classes for children ages 4 months to 9 months",
-//         desc:"Midland AF",
-//         address:"4400 W. Loop 250 Frontage Rd N., Suite 103 Midland, Texas 79707",
-//         phoneNum:"(432) 689-0800",
-//         image: LittleGym,
-//         tags:"kids"
-//     },
+    {
+        id:"1",
+        name: "The Little Gym of Midland",
+        link: "https://www.thelittlegym.com/midlandtx",
+        discountDesc:"Two free Bugs Classes for children ages 4 months to 9 months",
+        desc:"Midland AF",
+        address:"4400 W. Loop 250 Frontage Rd N., Suite 103 Midland, Texas 79707",
+        phoneNum:"(432) 689-0800",
+        image: LittleGym,
+        tags:"kids"
+    },
     {
         id:"2",
         name: "Hand Cafe",
