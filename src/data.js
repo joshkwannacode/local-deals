@@ -6,18 +6,18 @@ import BusinessFeatured from './assets/BusinessFeatured.png';
 import Brewing from './assets/Brewing.jpg';
 
 const data = [
-    {
-        id:"6",
-        name: "Eccentric Brewing Company",
-        link: "https://www.instagram.com/eccentricbrewingco/",
-        discountDesc:"$10 Off a Stainless Steel Insulated Growler With The Purchase of a Growler Fill",
-        desc:"Midland AF",
-        desc2:"Open hours - Wednesday 4-9, Friday 4-11, Saturday 4-9",
-        address:"1402 Cotton Flat Rd, Midland, TX 79701 ",
-        phoneNum:"",
-        image: Brewing,
-        tags:"eat"
-    },
+//     {
+//         id:"6",
+//         name: "Eccentric Brewing Company",
+//         link: "https://www.instagram.com/eccentricbrewingco/",
+//         discountDesc:"$10 Off a Stainless Steel Insulated Growler With The Purchase of a Growler Fill",
+//         desc:"Midland AF",
+//         desc2:"Open hours - Wednesday 4-9, Friday 4-11, Saturday 4-9",
+//         address:"1402 Cotton Flat Rd, Midland, TX 79701 ",
+//         phoneNum:"",
+//         image: Brewing,
+//         tags:"eat"
+//     },
 //     {
 //         id:"1",
 //         name: "The Little Gym of Midland",
